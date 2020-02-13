@@ -1,0 +1,107 @@
+
+package company;
+
+public class Company {
+
+	static String nameCompany;
+	protected int earnings;
+	protected int salaryWorkers;
+	private String adress;
+	private int sumFunds;
+	private int investment;
+
+	// -----------------------------------------------------
+	private int numberOfOffices;
+	private int numberWorkers;
+	public static String getNameCompany() {
+		return nameCompany;
+	}
+	public static void setNameCompany(String nameCompany) {
+		Company.nameCompany = nameCompany;
+	}
+	public int getEarnings() {
+		return earnings;
+	}
+	public void setEarnings(int earnings) {
+		this.earnings = earnings;
+	}
+	public int getSalaryWorkers() {
+		return salaryWorkers;
+	}
+	public void setSalaryWorkers(int salaryWorkers) {
+		this.salaryWorkers = salaryWorkers;
+	}
+	public String getAdress() {
+		return adress;
+	}
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+	public int getSumFunds() {
+		return sumFunds;
+	}
+	public void setSumFunds(int sumFunds) {
+		this.sumFunds = sumFunds;
+	}
+	public int getInvestment() {
+		return investment;
+	}
+	public void setInvestment(int investment) {
+		this.investment = investment;
+	}
+	public int getNumberOfOffices() {
+		return numberOfOffices;
+	}
+	public void setNumberOfOffices(int numberOfOffices) {
+		this.numberOfOffices = numberOfOffices;
+	}
+	public int getNumberWorkers() {
+		return numberWorkers;
+	}
+	public void setNumberWorkers(int numberWorkers) {
+		this.numberWorkers = numberWorkers;
+	}
+
+	public Company(int earnings, int salaryWorkers, String adress, int sumFunds, int investment, int numberOfOffices,
+			int numberWorkers) {
+		this.earnings = earnings;
+		this.salaryWorkers = salaryWorkers;
+		this.adress = adress;
+		this.sumFunds = sumFunds;
+		this.investment = investment;
+		this.numberOfOffices = numberOfOffices;
+		this.numberWorkers = numberWorkers;
+	}
+	public Company() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Company [earnings=" + earnings + ", salaryWorkers=" + salaryWorkers + ", adress=" + adress
+				+ ", sumFunds=" + sumFunds + ", investment=" + investment + ", numberOfOffices=" + numberOfOffices
+				+ ", numberWorkers=" + numberWorkers + "]";
+	}
+	public void resetValues(int earnings, int salaryWorkers, String adress, int sumFunds, int investment, int numberOfOffices,
+			int numberWorkers) {
+		this.earnings = earnings;
+		this.salaryWorkers = salaryWorkers;
+		this.adress = adress;
+		this.sumFunds = sumFunds;
+		this.investment = investment;
+		this.numberOfOffices = numberOfOffices;
+		this.numberWorkers = numberWorkers;
+	}
+	public char[] printNameCompany() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public static char[] printStringNameCompany() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	//public Company(int earnings, int salaryWorkers, String adress, int sumFunds, int investment) {
+	//	this(earnings, salaryWorkers, adress, sumFunds, investment, null);
+	//}
+	
+}
