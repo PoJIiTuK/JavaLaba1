@@ -1,0 +1,28 @@
+package company;
+
+public class CompanyPoint {
+	public static void main(final String[] args) {
+		String Chaynatayn = null;
+		Company.nameCompany = Chaynatayn;
+		Company redOffice = new Company();
+		Company greenOffice = new Company (35,43,"Shevchenka 12",45,45,23,43);
+		Company blueOffice = new Company(35,43,"Shevchenka 12",45,45,23,43);
+
+		System.out.println(redOffice);
+		System.out.println(greenOffice);
+		System.out.println(blueOffice);
+
+		Company[] companyArray = new Company[4];
+		int currentCompanyIndex = 0;
+		while (currentCompanyIndex < 4) {
+			companyArray[currentCompanyIndex] = new Company(412, 245, null, 245, 3565, 56, 76);
+			currentCompanyIndex++;
+		}
+		for (Company companyArrayElement : companyArray) {
+			System.out.println(companyArrayElement.toString());
+		}
+
+		System.out.println(redOffice.printNameCompany());
+		System.out.println(Company.printStringNameCompany());
+	}
+}
